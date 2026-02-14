@@ -45,11 +45,25 @@ for i in range(n+1):
 ```
 
 ### Algorithm & Explanation:
-*** Step 1:** We first check the "Gold Rule" of matrices: the number of columns in Matrix A must match the rows in Matrix B.
-**Step 2:** We create a "Result" matrix filled with zeros to store our answers.
-**Step 3:** We use three nested loops. The first two loops ($i$ and $j$) navigate through the rows and columns of the result matrix.
-//Step 4:** The third loop ($k$) performs the "dot product". it multiplies the elements of A's row by B's column and adds them to our result.
+**Step 1:** We first check the "Gold Rule" of matrices: the number of columns in Matrix A must match the rows in Matrix B.  
+**Step 2:** We create a "Result" matrix filled with zeros to store our answers.  
+**Step 3:** We use three nested loops. The first two loops ($i$ and $j$) navigate through the rows and columns of the result matrix.  
+**Step 4:** The third loop ($k$) performs the "dot product". it multiplies the elements of A's row by B's column and adds them to our result.  
 
+```python
+for Number in range(start, end):
+    strNum = str(Number)
+    power = len(strNum)
+    total = sum(int(i)**power for i in strNum)
+    if total == Number:
+        print(f"{Number} is an armstrong number")
+```
+### Algorithm & Explanation:
+* Step 1: We define a range based on the number of digits the user wants to check.
+* Step 2: We loop through every number in that range.
+* Step 3: Inside the loop, we convert the number to a string. This is a trick to easily grab each individual digit.
+* Step 4: We calculate the "power" (which is just the length of the number).
+* Step 5: We use a sum of each digit raised to that power. If the sum matches the original number, it’s an Armstrong number!
 ---
 
 ## Practical Applications Implemented
