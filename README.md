@@ -1,8 +1,9 @@
 # Experiment: Study of Iterative Structures (Loops) in Python
 
-## Aim & Objective
+## Aim : 
 The primary aim of this practical is to study and implement different types of loops in Python. The experiment focuses on understanding how to automate repetitive tasks and solve complex logic problems using iterative structures.
 
+## Objects :
 Our main objectives were:
 * To master the **While Loop** for condition-based iteration.
 * To master the **For Loop** for range-based and sequence-based iteration.
@@ -27,11 +28,27 @@ When a loop is placed inside another loop, it is called a nested loop. This is a
 * **Matrix Multiplication:** Iterating through rows and columns.
 * **Combinations:** Generating all possible sets of three digits.
 * **Pattern Printing:** Managing spaces and stars to create a diamond shape.
+---
 
+# Problem :
+# Write a Python code for Floyd's series
 
+# Solution :
+```python
+n = int(input("How many layers you want : "))
+a=1
+for i in range(n+1):
+  for j in range(i):
+    print(a,end=" ")
+    a = a +1
+  print(" ")
+```
 
-[Image of nested loop flowchart]
-
+### Algorithm & Explanation:
+*** Step 1:** We first check the "Gold Rule" of matrices: the number of columns in Matrix A must match the rows in Matrix B.
+**Step 2:** We create a "Result" matrix filled with zeros to store our answers.
+**Step 3:** We use three nested loops. The first two loops ($i$ and $j$) navigate through the rows and columns of the result matrix.
+//Step 4:** The third loop ($k$) performs the "dot product". it multiplies the elements of A's row by B's column and adds them to our result.
 
 ---
 
